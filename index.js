@@ -34,7 +34,7 @@ app.get('/cotacao', (req, res) => {
 init()
 
 
-app.listen(port, err => {
+app.listen(port, (err) => {
     if(err) {
         console.log('Sem conexão com o servidor')
     }else {
