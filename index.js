@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const path = require('path')
 
+const port = process.env.PORT || 3000
 
 const convert = require('./lib/convert')
 
@@ -30,10 +31,9 @@ app.get('/cotacao', (req, res) => {
     }
 })
 
-init()
 
 
-app.listen(3000, err => {
+app.listen(port, err => {
     if(err) {
         console.log('Sem conexão com o servidor')
     }else {
