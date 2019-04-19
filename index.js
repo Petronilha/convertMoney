@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const path = require('path')
 
+const port = preocess.env.PORT || 3000
 
 const convert = require('./lib/convert')
 
@@ -29,7 +30,11 @@ app.get('/cotacao', (req, res) => {
         })
     }
 })
-app.listen(3000, err => {
+
+init()
+
+
+app.listen(port, err => {
     if(err) {
         console.log('Sem conexão com o servidor')
     }else {
