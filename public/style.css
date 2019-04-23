@@ -1,9 +1,12 @@
 body {
     text-align: center;
+    margin: auto;
+    background-color: #269fe6;
 }
 h1 img {
     width: 489px;
     margin: 20px;
+    margin: auto;
 }
 input {
     margin: 4px;
@@ -11,7 +14,7 @@ input {
     border: 1px solid #000000;
     background: #fdfdfd;
     font-size: 20px;
-    
+    background-color: #85c3e7;
 }
 button {
     margin: 4px;
@@ -25,4 +28,9 @@ button {
     padding: 10px;
     border: 1px solid #d8d8d8;
     background: #fdfdfd;
+}
+@media only screen and (max-width:500px) {
+    h1 img {
+        width: 350px;
+    }
 }
